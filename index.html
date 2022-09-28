@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Day1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>React InterView Prepration Day 1</h1>
+
+    <h2> Q1. What is Virtual DOM ?</h2>
+    <p>Ans. In react Virtual DOM is an in-memory representation of Real DOM. The representation of User Interface is kept in memory and it syncs with real DOM. When user makes any changes in Page like button click or etc. then the value of state variable gets changed in this case the changes will not directly go to real DOM . Instead , in react there are two virtual DOMs ,one is created at the time of mounting and it holds the copy of real DOM and another virtual dom is created when changes happens in state then the new changes stores in this. now this changes are gets compared with another virtual dom which contains the copy of real dom and checks for all the changes. this process is known as diffing algorithm. Now the new changes will updated in Real DOM . This entire process is known as Recoinciliation </p>
+    <br>
+
+    <h2> Q2. What is SPA ?</h2>
+    <p> Ans. In web Application , when user clicks on any navbar or any link and the page reloads then this is Multi Page Application . in Single Page Application the page does not reloads after clicking on any link it just updates the changes in page. By using commmand CRA (create-react-app) in react developed by Facebook the single page Application is created.</p>
+    <br><br>
+
+    <h2>Q3. What is difference between Class and Functional Component ?</h2>
+    <p>Ans. <h3>Class Component : -</h3>
+        1. In react class component is created by creating class inheriting from React.component having render method in it.
+        2. it is a stateful component which have state variables in it
+        3. In class component render method returns a jsx which is syntatically similar to HTMl 
+        4. In react Class components life cycle methods are used.
+
+        <h3>Functional Component : -</h3>
+        1. Functional is just a plain function which accepts props as argument and return the react element
+        2. In functional component useState hook is used to create state like variable
+        3. In functional component there is no any render method.
+        4. In functional component , there is not any inbuilt lifeCycle methods , but by using useEffect hook method we can clone life cycle methods in functional component as well.
+    </p>
+    <br><br>
+
+    <h2>Q4. </h2>
+    
+
+</body>
+</html>
